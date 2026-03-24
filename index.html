@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abenezer | Modern Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Abenezer Birhanu</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#works">My Works</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <video autoplay loop muted class="header-video">
+            <source src="./asset/hero.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="video-overlay"></div>
+
+        <div class="header-container">
+            <div class="header-content scroll">
+                <span class="badge">Available for Hire</span>
+                <h1>Hello, I'm <br>
+                <span class="gradient-text">Abenezer</span></h1>
+                <p class="subtitle">Web Developer & 3D Artist</p>
+                <p class="description">I don't just build websites. I craft visually stunning, highly functional digital experiences that leave a lasting impact.</p>
+                <div class="cta-group">
+                    <a href="#works" class="btn primary-btn">Explore My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Let's Talk</a>
+                </div>
+            </div>
+            
+            <div class="header-image scroll">
+                <div class="image-glass-wrapper">
+                    <img src="./asset/my.jpg" alt="Abenezer Birhanu">
+                    <div class="floating-badge badge-1">UI/UX</div>
+                    <div class="floating-badge badge-2">3D</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-card">
+                <div class="icon">
+                    <img src="./asset/web-development.svg" alt="Web Development">
+                </div>
+                <h3>Web Development</h3>
+                <p>Crafting responsive, user-friendly, and dynamic websites tailored to modern needs.</p>
+            </div>
+            <div class="about-card">
+                <div class="icon">
+                    <img src="./asset/graphic-designing-icon.svg" alt="Graphic Design">
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Delivering eye-catching designs that elevate brand identity and user experience.</p>
+            </div>
+            <div class="about-card">
+                <div class="icon">
+                    <img src="./asset/3d-modeling-icon.svg" alt="3D Modeling">
+                </div>
+                <h3>3D Modeling</h3>
+                <p>Creating stunning 3D graphics and animations that bring ideas to life.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="works">
+        <h2 class="section-title scroll">My Works</h2>
+        <div class="work-cards">
+            <div class="work-card scroll">
+                <img src="./asset/p.jpeg" alt="Project One">
+                <div class="work-card-content">
+                    <a href="https://github.com/Abeni0101/LegalConnect" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <h3>Project One</h3></a>
+                    <p>Web development project showcasing modern design and functionality.</p>
+                    <div class="made">
+                        <span><img src="./asset/php.svg" alt="PHP Icon">PHP</span>
+                        <span><img src="./asset/html.svg" alt="HTML Icon">HTML</span>
+                        <span><img src="./asset/css-3.svg" alt="CSS Icon">CSS</span>
+                        <span><img src="./asset/javascript.svg" alt="JS Icon">JS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="work-card scroll">
+                <video autoplay loop muted>
+                    <source src="./asset/m.mp4" type="video/mp4">
+                </video>
+                <div class="work-card-content">
+                    <h3>Project Two</h3>
+                    <p>Graphic design project focused on branding and identity.</p>
+                    <div class="made">
+                        <span><img src="./asset/blender.svg" alt="" style="filter: invert(1);">Blender</span>
+                        <span><img src="./asset/premiere-pro.svg" alt="">Premiere-pro</span>
+                    </div>
+                </div>
+            </div>
+            <div class="work-card scroll">
+                <video autoplay loop muted>
+                    <source src="./asset/b.mp4" type="video/mp4">
+                </video>
+                <div class="work-card-content">
+                    <h3>Project Three</h3>
+                    <p>A creative blend of 3D modeling and motion graphics.</p>
+                    <div class="made">
+                        <span><img src="./asset/blender.svg" alt="" style="filter: invert(1);">Blender</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2 class="scroll" style="--i: 0.2s;">Testimonials</h2>
+        <div class="testimonial-wrapper">
+            <div class="testimonial-row scroll" style="--i: 0.4s;">
+                <div class="testimonial-content left">
+                    <p>"Abenezer delivered an outstanding website for our business. His design sense is impeccable, and the functionality exceeded our expectations!"</p>
+                    <div class="testimonial-author">
+                        <div>
+                            <h4>Seyoum Abera</h4>
+                            <span>Kefeta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="scroll" style="--i: 0.2s;">Get in Touch</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info scroll" style="--i: 0.4s;">
+                <h3>Let's Work Together</h3>
+                <p>Feel free to reach out via the form or contact me directly through the following:</p>
+                <ul>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: <a href="mailto:abib08656@gmail.com">abib08656@gmail.com</a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>Phone: <a href="tel:+251985842990">+251985842990</a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Location: Addis Ababa, Ethiopia</span>
+                    </li>
+                </ul>
+                <button class="hire-button">
+                    <i class="fas fa-phone"></i> Hire Me
+                </button>
+            </div>
+            <div class="or">OR</div>
+            <div class="contact-form scroll" style="--i: 0.6s;">
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Abeni0101" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
+        <p>
+            Designed by <a href="#">Abenezer Birhanu</a>
+        </p>
+        <div class="hire-me">
+            <a href="mailto:abib08656@gmail.com?subject=Hello&body=I%20would%20like%20to%20Hire%20You...">
+                <button class="hire-me-button">
+                    <i class="fas fa-envelope"></i> Hire Me
+                </button>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
