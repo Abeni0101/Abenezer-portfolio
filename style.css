@@ -1,0 +1,82 @@
+/* Core Apple Typographic System */
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Apple's exact web font stack */
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apple Specific Typography Settings */
+.apple-hero-text {
+    font-size: clamp(4rem, 10vw, 120px);
+    font-weight: 700;
+    letter-spacing: -0.04em; /* Very tight tracking for massive headers */
+    line-height: 1.05;
+}
+
+.apple-sub-text {
+    font-size: clamp(1.5rem, 3vw, 32px);
+    font-weight: 500;
+    letter-spacing: -0.015em;
+}
+
+.apple-headline {
+    font-size: clamp(2.5rem, 5vw, 64px);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+.apple-body {
+    font-size: clamp(1.1rem, 2vw, 21px);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+}
+
+.apple-label {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* Glassmorphism Navigation */
+.nav-blur {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.nav-blur.light-mode {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Apple Bento Box UI */
+.bento-card {
+    background: #111111;
+    border-radius: 32px;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.bento-card:hover {
+    transform: scale(1.02);
+}
+
+/* Fix 3D Canvas rendering smoothly */
+#canvas-container {
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
